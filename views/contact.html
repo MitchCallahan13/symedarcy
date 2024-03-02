@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="../scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/c542606888.js" crossorigin="anonymous"></script>
+    <title>Your Website</title>
+  </head>
+  <body>
+    <header class="header-design">
+      <nav class="nav" id="myTopnav">
+        <a href="index.html">
+          <div class="logo"></div>
+        </a>
+        <ul class="nav-items">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+        <div class="phone-links">
+          <a href="contact.html" class="contact-button">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="phoneDropdown()">
+            <i style="color: white;" class="fa-solid fa-bars fa-2xl"></i>
+          </a>
+        </div>
+      </nav>
+      <div class="header-image"></div>
+      <div class="header-words">
+        <h1>Contact</h1>
+        <h2>
+          Get In Touch
+        </h2>
+      </div>
+    </header>
+  
+    <div class="contact-head">
+      <h4>Contact us</h4>
+      <h1>Contact For Any Query</h1>
+    </div>
+    <main>
+      <div class="container">
+        <div class="left-tile">
+          <h3>Get In Touch</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="location-block">
+            <i class="fa-solid fa-square-phone fa-2xl"></i>
+            <div class="icon-sq">
+              <h3>Location</h3>
+              <p>Sandrinham</p>
+            </div>
+          </div>
+          <div class="location-block">
+            <i class="fa-solid fa-square-envelope fa-2xl"></i>
+            <div class="icon-sq">
+              <h3>Location</h3>
+              <p>Sandrinham</p>
+            </div>
+          </div>
+          <div class="location-block">
+            <i class="fa-solid fa-square-check fa-2xl"></i>
+            <div class="icon-sq">
+              <h3>Location</h3>
+              <p>Sandrinham</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="right-tile">
+          <h3>Get a Quote</h3>
+          <!-- Automated Email Form -->
+          <form onsubmit="sendEmail(); reset(); return false" id="contact">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="integer" id="phone" name="phone" placeholder="0400 000 000" required>
+            </div>
+            <div class="form-group">
+              <label for="suburb">Suburb of Residence</label>
+              <input type="text" id="suburb" name="suburb">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+          <h3 class="blue hidden" id="thanks">Thanks for Sending us a Message!</h3>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
+        </div>
+      </div>
+    </main>  
+  </body>
+  
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <!-- Your logo here -->
+      </div>
+      <div class="footer-section hideable">
+        <h2>NAVIGATION</h2>
+        <ul class="footer-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+      <div class="footer-section hideable">
+        <h2>SERVICES</h2>
+        <ul class="footer-services">
+          <li><a href="#">Service 1</a></li>
+          <li><a href="#">Service 2</a></li>
+          <li><a href="#">Service 3</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h2>CONTACT</h2>
+        <ul class="footer-contact">
+          <li>Email: example@example.com</li>
+          <li>Phone: +1234567890</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+</html>

@@ -1,0 +1,145 @@
+
+/* Nav Override */
+header.header-design .nav {
+  background-color: rgba(0, 0, 0, 0.414);
+}
+
+header.header-design .nav .contact-button {
+  background-color: var(--color);
+  color: white;
+}
+
+/* Header styling */
+.header-design {
+  height: 500px;
+}
+
+/* Header image styling */
+.header-design .header-image {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+  height: 100%; /* Cover the entire header */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Intro words styling */
+
+.header-words {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  text-align: center;
+  color: white;
+}
+
+.header-words h1 {
+font-size: 1.5rem;
+color: var(--color);
+font-weight: bold;
+}
+
+.header-words h2 {
+font-size: 2.5rem;
+font-weight: bold;
+margin-top: 20px;
+}
+
+
+/* Contact Body */
+
+  main {
+    display: flex;
+  }
+
+  .contact-head {
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    padding: 7% 10%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  .left-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .location-block {
+    display: flex;
+    gap: 10px;
+  }
+
+  .location-block > i {
+    font-size: 3rem;
+    color: var(--color);
+    line-height: normal;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px 0;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: var(--color);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #00448c;
+  }
+
+
+  /* Media query for smaller screens */
+ @media (max-width: 768px) {
+   .container .left-tile {
+    display: none;
+   }
+
+   .container {
+    display: block;
+   }
+ }

@@ -1,0 +1,103 @@
+
+/* Nav Override */
+header.header-design .nav {
+  background-color: rgba(0, 0, 0, 0.414);
+}
+
+/* Header styling */
+.header-design {
+  height: 500px;
+}
+
+/* Header image styling */
+.header-design .header-image {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+  height: 100%; /* Cover the entire header */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Intro words styling */
+
+.header-words {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  text-align: center;
+  color: white;
+}
+
+.header-words h1 {
+font-size: 1.5rem;
+color: var(--color);
+font-weight: bold;
+}
+
+.header-words h2 {
+font-size: 2.5rem;
+font-weight: bold;
+margin-top: 20px;
+}
+
+/* Standard styling for larger screens */
+.about-container {
+  padding: 80px 10%;
+  overflow: hidden;
+}
+
+.photo {
+  width: 45%;
+  float: left;
+  padding-right: 20px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  width: 50%;
+  float: right;
+}
+
+.photo-and-text h1 {
+  font-size: 2rem;
+}
+
+.photo-and-text h2 {
+  font-size: 1.3rem;
+}
+
+.divider {
+  height: 2px;
+  background-color: var(--color);
+  margin: 20px 100% 20px 0;
+  width: 30%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .photo {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+  }
+
+  .text {
+    width: 100%;
+    float: none;
+  }
+}

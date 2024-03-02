@@ -1,0 +1,117 @@
+
+/* Nav Override */
+header.header-design .nav {
+    background-color: rgba(0, 0, 0, 0.414);
+  }
+  
+  /* Header styling */
+  .header-design {
+    height: 500px;
+  }
+  
+  /* Header image styling */
+  .header-design .header-image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+    height: 100%; /* Cover the entire header */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Intro words styling */
+  
+  .header-words {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    text-align: center;
+    color: white;
+  }
+  
+  .header-words h1 {
+  font-size: 1.5rem;
+  color: var(--color);
+  font-weight: bold;
+  }
+  
+  .header-words h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  }
+
+  /* Portfolio tiles */
+
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+  }
+
+  .portfolio-container {
+    display: block;
+    width: 80%;
+  }
+
+  .portfolio-tile {
+    padding: 20px;
+    width: 100%;
+    background-color: #f5f5f5; /* Slightly off white */
+    box-sizing: border-box
+  }
+
+  .portfolio-tile:not(:first-child) {
+    margin-top: 3%;
+  }
+
+  .tile-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .tile-content > div {
+    width: 100%;
+  }
+
+  .tile-content img {
+    width: 33%; /* Adjust based on your design */
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .tile-content p {
+    margin: 0;
+  }
+
+   /* Media query for smaller screens */
+   @media (max-width: 900px) {
+
+    .tile-content {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 30px;
+    }
+    
+    .tile-content img {
+      width: 100%; /* Images fill the entire width of the container */
+    }
+    
+    .tile-content > div {
+      width: 100%; /* Divs also fill the entire width of the container */
+    }
+    
+    .tile-content p {
+      margin: 0;
+    }
+    
+  }

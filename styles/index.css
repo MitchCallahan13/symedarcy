@@ -1,0 +1,275 @@
+/* Header styling */
+.header-design {
+  height: 700px;
+}
+
+/* Header image styling */
+.header-design .header-image {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+  height: 100%; /* Cover the entire header */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Intro words styling */
+
+.header-words {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    text-align: center;
+    color: white;
+  }
+  
+.header-words h1 {
+  font-size: 1.5rem;
+  color: var(--color);
+  font-weight: bold;
+}
+
+.header-words h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* White Intro text div */
+
+.intro-container {
+  padding: 80px 70px;
+  text-align: center;
+}
+  
+h1.intro-header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.intro-line {
+  width: 200px;
+  height: 2px;
+  background-color: var(--color);
+  margin: 30px auto;
+}
+
+.intro-container h3 {
+    margin: 30px 0;
+}
+
+p.intro-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.intro-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px 40px;
+  color: var(--color);
+  border: 2px solid var(--color);
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1rem;
+}
+
+.intro-button:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+/* Second Parallex Image */
+
+.middle-img-container {
+    height: 400px;
+}
+
+.image-filler {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .sec-img {
+    position: relative;
+    transform: translate(0%, -250%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .sec-img h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .sec-img h1:first-child {
+    color: white; /* Set the color of the first h1 to white */
+  }
+  
+  .sec-img h1:last-child {
+    color: var(--color); /* Set the color of the second h1 */
+  }
+
+.sec-text-container {
+    text-align: center;
+    padding: 120px 70px;
+    background-color: white;
+}
+
+/* Services Container  */
+
+.services-container {
+  text-align: center;
+  padding: 80px 70px;
+  background-color: rgb(243, 232, 215);
+  
+}
+
+.service-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.service-box {
+  flex-basis: calc(33.33% - 20px); /* Distribute space for 3 equal-width boxes */
+  padding: 20px;
+  text-align: center;
+}
+
+.service-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 1rem;
+}
+
+ /* Footer */
+ 
+ /* Your existing styles */
+ 
+ .footer {
+   background-color: var(--color);
+   color: white;
+   padding: 50px 0;
+ }
+ 
+ .footer-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+ 
+ .footer-logo {
+   flex-basis: 25%;
+   background-color: white;
+   padding: 20px;
+   height: 150px;
+ }
+ 
+ .footer-section {
+   flex-basis: 20%;
+   padding: 0 20px;
+ }
+ 
+ .footer h2 {
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+ }
+ 
+ .footer-nav, .footer-contact, .footer-services {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .footer-nav li, .footer-contact li, .footer-services li {
+   margin-bottom: 10px;
+ }
+ 
+ .footer-nav a, .footer-services a {
+   color: white;
+   text-decoration: none;
+ }
+ 
+ /* ABOUT.HTML */
+ 
+ /* Standard styling for larger screens */
+ .about-container {
+   padding: 80px 10%;
+   overflow: hidden;
+ }
+ 
+ .photo {
+   width: 45%;
+   float: left;
+   padding-right: 20px;
+ }
+ 
+ .photo img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ .text {
+   width: 50%;
+   float: right;
+ }
+ 
+ .photo-and-text h1 {
+   font-size: 2rem;
+ }
+ 
+ .photo-and-text h2 {
+   font-size: 1.3rem;
+ }
+ 
+ .divider {
+   height: 2px;
+   background-color: var(--color);
+   margin: 20px 100% 20px 0;
+   width: 30%;
+ }
+ 
+ /* Media query for smaller screens */
+ @media (max-width: 768px) {
+   .about-container {
+     padding: 40px 20px; /* Adjust padding for smaller screens */
+   }
+ 
+   .photo {
+     width: 100%;
+     float: none;
+     padding-right: 0;
+   }
+ 
+   .text {
+     width: 100%;
+     float: none;
+   }
+ }
+ 
