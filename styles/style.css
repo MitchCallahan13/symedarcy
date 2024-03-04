@@ -129,7 +129,7 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
 
   .nav.responsive .nav-items {
     display: block;
-    text-align: centre;
+    text-align: center;
     width: 100%;
   }
 
@@ -140,7 +140,7 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   }
 
   .nav.responsive .nav-items li:hover {
-    background-color: var(--color);
+    color: var(--color);
   }
 
   .phone-links {
@@ -150,36 +150,7 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   }
 }
 
-/* Services Drop Down */
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: white;
-  z-index: 1000;
-  margin-top: 10px;
-
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  padding: 5px;
-}
-
-.dropdown-menu a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  font-size: 0.7rem;
-}
-
-.dropdown-menu a:hover {
-  background-color: var(--color);
-  color: white;
-}
+/* FOOTER */
 
 .footer {
   background-color: var(--color);
