@@ -53,6 +53,10 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   font-size: xx-large;
 }
 
+.logo .fa-brands {
+  line-height: normal;
+}
+
 .nav-items {
   list-style: none;
   display: flex;
@@ -150,6 +154,14 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   }
 }
 
+/* MISCELLANEOUS */
+
+.intro-line {
+  width: 200px;
+  height: 2px;
+  background-color: var(--color);
+}
+
 /* FOOTER */
 
 .footer {
@@ -171,7 +183,7 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
 
 .footer-logo {
   flex-basis: 20%;
-  background-color: white;
+  background-color: black;
   padding: 20px;
   height: 100px;
 }
@@ -238,3 +250,4 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
 .blue {
   color: var(--color);
 }
+

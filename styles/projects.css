@@ -75,17 +75,17 @@ header.header-design .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     gap: 30px;
   }
 
   .tile-content > div {
-    width: 100%;
+    width: 34%;
+    margin: 15px 0;
   }
 
   .tile-content img {
     width: 33%; /* Adjust based on your design */
-    height: 300px;
+    height: 380px;
     object-fit: cover;
   }
 
@@ -101,6 +101,10 @@ header.header-design .nav {
       flex-direction: column; /* Stack items vertically */
       gap: 30px;
     }
+
+    .portfolio-tile:nth-child(2n) .tile-content {
+      flex-direction: column-reverse;
+    }
     
     .tile-content img {
       width: 100%; /* Images fill the entire width of the container */
@@ -115,3 +119,9 @@ header.header-design .nav {
     }
     
   }
+
+/* MISCELLANEOUS */
+
+.intro-line {
+  margin: 20px 0;
+}
