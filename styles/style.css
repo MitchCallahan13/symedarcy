@@ -17,6 +17,14 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none;
+}
+
+.white {
+  color: white !important;
+}
+
 /* Nav Styles */
 
 
@@ -51,10 +59,6 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   width: 80px;
   color: white;
   font-size: xx-large;
-}
-
-.logo .fa-brands {
-  line-height: normal;
 }
 
 .nav-items {
@@ -238,6 +242,10 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   footer .footer-logo {
     height: 40px;
     width: 100%;
+  }
+
+  .logo .fa-brands {
+    line-height: normal;
   }
 }
 

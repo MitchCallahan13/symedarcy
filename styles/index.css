@@ -80,6 +80,7 @@ p.intro-paragraph {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .intro-button:hover {
@@ -128,11 +129,54 @@ p.intro-paragraph {
     color: var(--color); /* Set the color of the second h1 */
   }
 
-.sec-text-container {
+  /* Slidshow */
+
+  .sec-text-container {
+    height: 500px;
+    margin: 0;
+    position: relative;
+  }
+ 
+  .slideshow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slideshow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5));
+    pointer-events: none; /* add this to allow clicks to pass through the pseudo-element */
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: transform 0.7s ease; /* add a transition */
+  }
+  
+  .slide img {
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .project-word {
+    position: absolute;
+    top: 50%; /* adjust as needed */
+    left: 50%; /* adjust as needed */
+    transform: translate(-50%, -50%); /* center the elements */
+    z-index: 1; /* make sure the elements are on top */
     text-align: center;
-    padding: 120px 70px;
-    background-color: white;
-}
+  }
 
 /* Services Container  */
 
@@ -164,52 +208,6 @@ p.intro-paragraph {
   font-size: 1rem;
 }
 
- /* Footer */
- 
- /* Your existing styles */
- 
- .footer {
-   background-color: var(--color);
-   color: white;
-   padding: 50px 0;
- }
- 
- .footer-container {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   max-width: 1200px;
-   margin: 0 auto;
- }
- 
- .footer-section {
-   flex-basis: 20%;
-   padding: 0 20px;
- }
- 
- .footer h2 {
-   font-size: 1.5rem;
-   margin-bottom: 20px;
- }
- 
- .footer-nav, .footer-contact, .footer-services {
-   list-style: none;
-   padding: 0;
- }
- 
- .footer-nav li, .footer-contact li, .footer-services li {
-   margin-bottom: 10px;
- }
- 
- .footer-nav a, .footer-services a {
-   color: white;
-   text-decoration: none;
- }
-
- .phone-service {
-   display: none;
- }
- 
  @media (max-width: 768px) {
   .phone-service {
     display: block;

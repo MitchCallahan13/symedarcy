@@ -34,3 +34,18 @@ function phoneDropdown() {
   var x = document.getElementById("myTopnav");
   x.classList.toggle("responsive");
 }
+
+window.onload = function() {
+  var slideIndex = 0;
+  var slides = document.getElementsByClassName('slide');
+
+  function moveSlide() {
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.transform = 'translateX(-' + (slideIndex * 100) + '%)';
+    }
+    slideIndex = (slideIndex + 1) % slides.length;
+  }
+
+  // Move slide every 3 seconds
+  setInterval(moveSlide, 3000);
+}
