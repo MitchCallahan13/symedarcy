@@ -13,7 +13,7 @@ function sendEmail(){
       Host : "smtp.elasticemail.com",
       Username : "mitchcallahan83@gmail.com",
       Password : "7F8D432537DD7B7720C2AB96BD96676E519E",
-      To : 'mitchcallahan83@gmail.com',
+      To : 'mitchcallahan@icloud.com',
       From : "mitchcallahan83@gmail.com",
       Subject : "New Gum Removal Request",
       Body : "Name: " + document.getElementById("name").value + "<br>Phone: " + 
