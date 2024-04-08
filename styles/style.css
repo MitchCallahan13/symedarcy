@@ -122,6 +122,7 @@ a {
   .nav {
     display: inline-block;
     width: -webkit-fill-available;
+    padding-bottom: 35px;
   }
 
   .nav .icon {
@@ -139,6 +140,7 @@ a {
     display: block;
     text-align: center;
     width: 100%;
+    margin-top: 20px;
   }
 
   .nav.responsive .nav-items li {
