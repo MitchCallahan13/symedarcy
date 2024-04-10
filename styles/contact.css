@@ -86,7 +86,8 @@ margin-top: 20px;
 
   .location-block {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    margin: 10px 0;
   }
 
   .location-block > i {
@@ -130,6 +131,14 @@ margin-top: 20px;
 
   button:hover {
     background-color: #00448c;
+  }
+
+  .icon-sq a {
+    text-decoration: none;
+  }
+
+  .left-tile p {
+    line-height: 1.5;
   }
 
 
