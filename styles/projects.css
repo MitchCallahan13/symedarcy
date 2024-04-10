@@ -91,11 +91,15 @@ header.header-design .nav {
     padding: 10px;
   }
 
-  .tile-content img {
-    width: 33%; /* Adjust based on your design */
+  .tile-content > a > img {
+    width: 100%; /* Adjust based on your design */
     height: 380px;
     object-fit: cover;
     transition: filter 0.3s ease;
+  }
+
+  .tile-content > a {
+    width: 33%; /* Adjust based on your design */
   }
 
   .tile-content img:hover {
@@ -115,11 +119,19 @@ header.header-design .nav {
       gap: 30px;
     }
 
+    .tile-content > div > a.intro-button {
+      display: block;
+      padding: 10px;
+      position: relative;
+      width: fit-content;
+      margin-top: 15px;
+    }
+
     .portfolio-tile:nth-child(2n) .tile-content {
       flex-direction: column-reverse;
     }
     
-    .tile-content img {
+    .tile-content > a {
       width: 100%; /* Images fill the entire width of the container */
     }
     

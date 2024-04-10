@@ -11,7 +11,7 @@ header.header-design .nav {
 
 /* Header image styling */
 .header-design .header-image {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/david/new_6.jpeg') center/cover no-repeat;
   height: 100%; /* Cover the entire header */
   position: absolute;
   top: 0;

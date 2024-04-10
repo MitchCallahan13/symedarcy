@@ -5,7 +5,7 @@
 
 /* Header image styling */
 .header-design .header-image {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/david/new_6.jpeg') center/cover no-repeat;
   height: 100%; /* Cover the entire header */
   position: absolute;
   top: 0;
@@ -82,7 +82,7 @@ p.intro-paragraph {
 }
 
 .image-filler {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/pic3.jpg') center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/david/new_6.jpeg') center/cover no-repeat;
     height: 100%;
     position: relative;
     margin: 0;
@@ -116,55 +116,6 @@ p.intro-paragraph {
     color: var(--color); /* Set the color of the second h1 */
   }
 
-  /* Slidshow */
-
-  .sec-text-container {
-    height: 500px;
-    margin: 0;
-    position: relative;
-  }
- 
-  .slideshow {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .slideshow::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5));
-    pointer-events: none; /* add this to allow clicks to pass through the pseudo-element */
-  }
-  
-  .slide {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    transition: transform 0.7s ease; /* add a transition */
-  }
-  
-  .slide img {
-    width: 50vw;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .project-word {
-    position: absolute;
-    top: 50%; /* adjust as needed */
-    left: 50%; /* adjust as needed */
-    transform: translate(-50%, -50%); /* center the elements */
-    z-index: 1; /* make sure the elements are on top */
-    text-align: center;
-  }
-
 /* Services Container  */
 
 .services-container {
@@ -196,6 +147,10 @@ p.intro-paragraph {
 }
 
  @media (max-width: 768px) {
+  .header-design .header-image {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/regworth/IMG_7649.jpeg') center/cover no-repeat;
+  }
+
   .phone-service {
     display: block;
     text-align: center;
