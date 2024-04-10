@@ -1,0 +1,33 @@
+.full-width {
+    width: 80%;
+    margin: 40px 10%; /* Add some spacing between sections */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); /* Adjust min width as needed */
+    gap: 10px;
+}
+
+.grid-item {
+    width: calc(100% - 5px); /* Ensure grid items fill available space */
+    height: 300px; /* Adjust height as needed */
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.grid-item:hover {
+    filter: brightness(50%);
+}
+
+.full-width > .divider {
+    width: 20%;
+}
+
+.full-width > h2 {
+    font-weight: 400;
+}
+
+.full-width > p {
+    margin: 20px 0 40px 0;
+}

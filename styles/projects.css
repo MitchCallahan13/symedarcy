@@ -81,12 +81,25 @@ header.header-design .nav {
   .tile-content > div {
     width: 34%;
     margin: 15px 0;
+    position: relative;
+  }
+
+  .tile-content > div > a.intro-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
   }
 
   .tile-content img {
     width: 33%; /* Adjust based on your design */
     height: 380px;
     object-fit: cover;
+    transition: filter 0.3s ease;
+  }
+
+  .tile-content img:hover {
+    filter: brightness(50%);
   }
 
   .tile-content p {

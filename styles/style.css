@@ -261,3 +261,19 @@ a {
   color: var(--color);
 }
 
+.intro-button {
+  display: inline-block;
+  color: var(--color);
+  border: 2px solid var(--color);
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.intro-button:hover {
+  background-color: var(--color);
+  color: white;
+}
+
