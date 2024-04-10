@@ -189,9 +189,12 @@ a {
 
 .footer-logo {
   flex-basis: 20%;
-  background-color: black;
   padding: 20px;
   height: 100px;
+}
+
+.footer-logo > img {
+  height: -webkit-fill-available;
 }
 
 .footer-section {
