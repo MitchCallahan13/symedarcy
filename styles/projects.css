@@ -91,19 +91,21 @@ header.header-design .nav {
     padding: 15px 30px;
   }
 
+  .tile-content > a {
+    width: 33%; /* Adjust based on your design */
+    overflow: hidden; /* Add this line */
+  }
+  
   .tile-content > a > img {
     width: 100%; /* Adjust based on your design */
     height: 380px;
     object-fit: cover;
-    transition: filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add transform to the transition */
   }
-
-  .tile-content > a {
-    width: 33%; /* Adjust based on your design */
-  }
-
+  
   .tile-content img:hover {
     filter: brightness(50%);
+    transform: scale(1.05); /* Adjust this value as needed */
   }
 
   .tile-content p {
