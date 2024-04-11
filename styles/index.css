@@ -139,6 +139,12 @@ p.intro-paragraph {
 
 .service-box i {
   font-size: 60px;
+  color: var(--color);
+  transition: scale 0.3s ease;
+}
+
+.service-box i:hover {
+  scale: 1.4;
 }
 
 .service-box h2 {
