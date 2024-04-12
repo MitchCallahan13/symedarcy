@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --color: #68b0f7;
+  --color: #1c97ff;
 }
 
 /* Add Roboto font */
@@ -43,7 +43,7 @@ a {
   transition: background-color 0.8s ease; 
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 5px 20px 0;
 }
 
 .sticky-nav {
@@ -54,11 +54,8 @@ a {
   right: 0;
 }
 
-.logo {
-  height: 40px;
-  width: 80px;
-  color: white;
-  font-size: xx-large;
+.logo img {
+  height: 100px;
 }
 
 .nav-items {
@@ -122,7 +119,7 @@ a {
   .nav {
     display: inline-block;
     width: -webkit-fill-available;
-    padding-bottom: 35px;
+    padding: 20px;
   }
 
   .nav .icon {
@@ -140,7 +137,6 @@ a {
     display: block;
     text-align: center;
     width: 100%;
-    margin-top: 20px;
   }
 
   .nav.responsive .nav-items li {
@@ -156,7 +152,11 @@ a {
   .phone-links {
     position: absolute;
     right: 20px;
-    top: 40px;
+    top: 45px;
+  }
+
+  .nav .logo img {
+    height: 70px;
   }
 }
 
