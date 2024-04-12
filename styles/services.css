@@ -62,6 +62,7 @@
 
   .consultants-column li {
     line-height: 2;
+    text-transform: none !important;
   }
 
   @media (max-width: 768px) {
