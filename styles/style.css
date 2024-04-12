@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --color: #1c97ff;
+  --sec: #61b8ff;
 }
 
 /* Add Roboto font */
@@ -47,7 +48,7 @@ a {
 }
 
 .sticky-nav {
-  background-color: rgba(0, 0, 0, 0.414); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.619); /* Semi-transparent black background */
   position: fixed;
   top: 0; /* Stick to the top */
   left: 0;
@@ -245,7 +246,7 @@ a {
   }
 
   footer.footer {
-    padding: 10px 0;
+    padding: 10px 0 0;
   }
 
   footer .footer-container {

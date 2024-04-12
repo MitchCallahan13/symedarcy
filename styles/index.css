@@ -31,7 +31,7 @@
   
 .header-words h1 {
   font-size: 1.5rem;
-  color: var(--color);
+  color: var(--sec);
   font-weight: bold;
 }
 
@@ -113,7 +113,7 @@ p.intro-paragraph {
   }
   
   .sec-img h1:last-child {
-    color: var(--color); /* Set the color of the second h1 */
+    color: var(--sec); /* Set the color of the second h1 */
   }
 
 /* Services Container  */
@@ -162,6 +162,10 @@ p.intro-paragraph {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/regworth/IMG_7649.jpeg') center/cover no-repeat;
   }
 
+  .image-filler {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/regworth/IMG_7649.jpeg') center/cover no-repeat;
+  }
+
   .phone-service {
     display: block;
     text-align: center;
@@ -172,7 +176,7 @@ p.intro-paragraph {
   }
 
   .sec-img {
-    transform: translate(0%, -130%);
+    transform: translate(0%, -150%);
     padding: 10px;
 }
 }
