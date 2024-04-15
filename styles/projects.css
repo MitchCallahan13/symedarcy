@@ -92,8 +92,30 @@ header.header-design .nav {
   }
 
   .tile-content > a {
+    position: relative;
     width: 33%; /* Adjust based on your design */
     overflow: hidden; /* Add this line */
+  }
+
+  /* Style for the white box */
+  .tile-content > a:nth-of-type(odd)::before {
+    content: "Before";
+  }
+  
+  .tile-content > a:nth-of-type(even)::before {
+    content: "After";
+  }
+  
+  /* Style for the white box */
+  .tile-content > a::before {
+    color: white;
+    position: absolute;
+    left: 0;
+    background-color: var(--color);
+    padding: 5px 10px; /* Adjust padding as needed */
+    min-width:63px;
+    text-align: center;
+    text-transform: uppercase;
   }
   
   .tile-content > a > img {

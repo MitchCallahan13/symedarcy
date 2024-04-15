@@ -14,7 +14,7 @@ body, h1, h2, h3, ul, li, p, input, textarea, button {
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
 }
 
-.header-design h1, h2, h3, ul, li {
+.header-design :where(h1, h2, h3, ul, li) {
   text-transform: uppercase;
 }
 
@@ -36,6 +36,10 @@ a {
 }
 
 /* Navigation styling */
+
+.nav :where(ul, li) {
+  text-transform: uppercase;
+}
 
 .nav {
   position: relative; /* Change to relative positioning */
@@ -71,7 +75,7 @@ a {
 }
 
 .nav-items li {
-  margin-right: 20px;
+  margin: 0 50px;
 }
 
 .nav-items a {
@@ -81,7 +85,7 @@ a {
 }
 
 .nav a.active {
-  color: var(--color);
+  color: var(--sec);
 }
 
 
@@ -92,8 +96,8 @@ a {
 
 .contact-button {
   padding: 10px 20px;
-  border: solid 2px var(--color);
-  color: var(--color);
+  border: solid 2px var(--sec);
+  color: var(--sec);
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
@@ -198,7 +202,7 @@ a {
 
 .footer-logo {
   flex-basis: 20%;
-  padding: 20px;
+  padding: 5px 0 20px 0;
   height: 100px;
 }
 
@@ -342,4 +346,22 @@ a {
   z-index: 1; /* make sure the elements are on top */
   text-align: center;
 }
+
+/* Projects Images */
+.header-design .header-image#regworth {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/regworth/IMG_7645.jpeg') center/cover no-repeat;
+}
+
+.header-design .header-image#david {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/david/new_2.jpeg') center/cover no-repeat;
+}
+
+.header-design .header-image#were {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/were/image3.jpg') center/cover no-repeat;
+}
+
+.header-design .header-image#retreat {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/retreat/after.jpeg') center/cover no-repeat;
+}
+
 
