@@ -90,10 +90,6 @@ margin-top: 20px;
     padding: 40px 20px; /* Adjust padding for smaller screens */
   }
 
-  .header-design .header-image {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/regworth/IMG_7649.jpeg') center/cover no-repeat;
-  }
-
   .photo {
     width: 100%;
     float: none;

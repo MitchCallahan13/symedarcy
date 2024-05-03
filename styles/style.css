@@ -90,7 +90,7 @@ a {
 
 
 .nav-items a:hover {
-  color: var(--color);
+  color: var(--sec);
 }
 
 
@@ -106,7 +106,7 @@ a {
 }
 
 .contact-button:hover {
-  background-color: var(--color);
+  background-color: var(--sec);
   color: white;
 }
 
@@ -142,6 +142,7 @@ a {
     display: block;
     text-align: center;
     width: 100%;
+    margin-left: -5% !important;
   }
 
   .nav.responsive .nav-items li {
@@ -151,7 +152,7 @@ a {
   }
 
   .nav.responsive .nav-items li:hover {
-    color: var(--color);
+    color: var(--sec);
   }
 
   .phone-links {
@@ -270,6 +271,8 @@ a {
   .logo .fa-brands {
     line-height: normal;
   }
+
+
 }
 
 /* Miscellaneous */
@@ -295,6 +298,17 @@ a {
 
 .intro-button:hover {
   background-color: var(--color);
+  color: white;
+}
+
+
+.intro-button.light {
+  color: var(--sec);
+  border: 2px solid var(--sec);
+}
+
+.intro-button.light:hover {
+  background-color: var(--sec);
   color: white;
 }
 
@@ -377,5 +391,15 @@ a {
 
 .header-design .header-image#retreat {
   background-image: url('../images/retreat/after.jpeg');
+}
+
+@media screen and (max-width: 780px) {
+  .header-image {
+    background-attachment: unset !important;
+  }
+
+  .image-filler {
+    background-attachment: unset !important;
+  }
 }
 

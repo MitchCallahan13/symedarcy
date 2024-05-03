@@ -158,9 +158,6 @@ p.intro-paragraph {
 }
 
  @media (max-width: 768px) {
-  .header-design .header-image {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/regworth/IMG_7649.jpeg') center/cover no-repeat;
-  }
 
   .image-filler {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)), url('../images/regworth/IMG_7649.jpeg') center/cover no-repeat;

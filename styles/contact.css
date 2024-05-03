@@ -5,7 +5,7 @@ header.header-design .nav {
 }
 
 header.header-design .nav .contact-button {
-  background-color: var(--color);
+  background-color: var(--sec);
   color: white;
 }
 
@@ -42,7 +42,7 @@ header.header-design .nav .contact-button {
 
 .header-words h1 {
 font-size: 1.5rem;
-color: var(--color);
+color: var(--sec);
 font-weight: bold;
 }
 
@@ -123,7 +123,7 @@ margin-top: 20px;
   button {
     padding: 15px;
     font-size: 1rem;
-    background-color: var(--color);
+    background-color: var(--sec);
     color: white;
     border: none;
     cursor: pointer;
