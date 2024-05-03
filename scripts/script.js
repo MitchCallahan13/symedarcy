@@ -15,7 +15,7 @@ function sendEmail(){
       Password : "7F8D432537DD7B7720C2AB96BD96676E519E",
       To : 'jc@symedarcy.com.au',
       From : "mitchcallahan83@gmail.com",
-      Subject : "New Gum Removal Request",
+      Subject : "New Syme Darcy Job Request",
       Body : "Name: " + document.getElementById("name").value + "<br>Phone: " + 
             document.getElementById("phone").value + "<br>Email: " + document.getElementById("email").value + 
             "<br>Suburb: " + document.getElementById("suburb").value + "<br>Message: " 
